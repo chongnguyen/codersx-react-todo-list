@@ -19,9 +19,9 @@ function App() {
           Learn React
         </a>
         <ul>
-          <li>{todos[0]}</li>
-          <li>{todos[1]}</li>
-          <li>{todos[2]}</li>
+          {
+            todos.map(item => ( <li>{item}</li> ))
+          }
         </ul>
       </header>
     </div>
